@@ -1,0 +1,45 @@
+:root {
+  --red: #a30021;
+  --bar: #182322;
+  --ink: #191c1b;
+  --muted: #6b6f6d;
+  --line: #dcdedd;
+  --bg: #ffffff;
+  --tile: #f4f4f3;
+  --ok: #1e7a3c;
+}
+* { box-sizing: border-box; }
+body {
+  width: 300px; margin: 0;
+  font: 13px/1.4 "Franklin Gothic Medium", "Libre Franklin", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink); background: var(--bg);
+}
+header { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--bar); color: #fff; }
+.mark { height: 30px; width: auto; }
+h1 { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: .01em; }
+header p { margin: 1px 0 0; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+main { padding: 12px 14px 14px; }
+.hint { margin: 0 0 8px; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+#channels { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+button {
+  padding: 10px 0; border: 1px solid var(--line); border-radius: 4px;
+  background: var(--tile); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer;
+  transition: background .12s, border-color .12s, color .12s;
+}
+button:hover { border-color: var(--red); color: var(--red); background: #fff; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 1px; }
+button.done, button.done:hover { background: var(--ok); border-color: var(--ok); color: #fff; }
+#result { margin-top: 10px; min-height: 16px; font-size: 11px; color: var(--ok); word-break: break-all; }
+#result.err { color: var(--red); }
+footer { margin-top: 10px; text-align: right; font-size: 10px; color: var(--muted); opacity: .7; }
+details { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; }
+summary { cursor: pointer; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+label { display: block; margin-top: 10px; font-weight: 600; }
+label span { display: block; font-weight: 400; color: var(--muted); font-size: 11px; }
+input { width: 100%; margin-top: 4px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 4px; font: inherit; background: #fff; color: var(--ink); }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #eeeeec; --muted: #a0a4a2; --line: #3d413f; --bg: #191c1b; --tile: #262a28; }
+  button:hover, input { background: #1f2321; }
+  header { border-bottom: 1px solid var(--line); }
+  button:hover { color: #ff8a9e; border-color: #ff8a9e; }
+}

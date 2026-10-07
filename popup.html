@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/link.svg" alt="" class="mark">
+    <div>
+      <h1>UTM Link Copier</h1>
+      <p>UTM codes in one click</p>
+    </div>
+  </header>
+  <main>
+    <p class="hint">Copy this page's link for</p>
+    <div id="channels"></div>
+    <div id="result" aria-live="polite"></div>
+    <details>
+      <summary>Options</summary>
+      <label>Campaign name <span>blank = from article URL</span>
+        <input id="campaign" type="text" placeholder="e.g. october-issue">
+      </label>
+      <label>Your initials <span>optional, added as utm_content</span>
+        <input id="initials" type="text" maxlength="6" placeholder="e.g. jf">
+      </label>
+    </details>
+    <footer id="version"></footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
