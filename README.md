@@ -1,6 +1,6 @@
 # UTM Link Copier
 
-A small Chrome extension that copies a page's link with tracking codes (UTM codes) already added, so you can see in your analytics which channel each visit came from. One click, nothing to fill in.
+A small browser extension for Chrome, Brave and Edge that copies a page's link with tracking codes (UTM codes) already added, so you can see in your analytics which channel each visit came from. One click, nothing to fill in.
 
 Works for: **WhatsApp, Facebook, Instagram, X and YouTube.**
 
@@ -8,20 +8,23 @@ Works for: **WhatsApp, Facebook, Instagram, X and YouTube.**
 
 ## Install (about 2 minutes)
 
-You need Google Chrome (or Microsoft Edge). No coding required.
+You need Google Chrome, Brave or Microsoft Edge. No coding required. The steps are the same in all three; only the address you type in step 4 differs.
 
 1. **Download the extension.**
    Go to https://github.com/Jthe4th/utm-helper, click the green **Code** button, then **Download ZIP**.
 2. **Unzip it.**
    Find the downloaded `utm-helper-main.zip` (usually in Downloads) and double-click it. You'll get a folder called `utm-helper-main`.
 3. **Move the folder somewhere permanent**, such as Documents.
-   Chrome reads the extension from this folder, so don't delete or move it afterward.
-4. **Open Chrome's extensions page.**
-   Type `chrome://extensions` in the address bar and press Enter. (In Edge, type `edge://extensions`.)
+   Your browser reads the extension from this folder, so don't delete or move it afterward.
+4. **Open your browser's extensions page.**
+   Type the address for your browser in the address bar and press Enter:
+   - Chrome: `chrome://extensions`
+   - **Brave: `brave://extensions`**
+   - Edge: `edge://extensions`
 5. **Turn on Developer mode.**
-   It's a switch in the top-right corner of the page. This is normal for extensions that aren't in the Chrome Web Store.
+   It's a switch in the top-right corner of the page (in Edge it's in the left sidebar). This is normal for extensions that aren't in a browser's web store.
 6. **Click "Load unpacked"** (top-left), choose the `utm-helper-main` folder, and click **Select**.
-7. **Pin it** so it's easy to reach: click the puzzle-piece icon in Chrome's toolbar, then the pin next to **UTM Link Copier**.
+7. **Pin it** so it's easy to reach: click the puzzle-piece icon in the browser's toolbar, then the pin next to **UTM Link Copier**.
 
 You should now see a white link symbol on a dark green square in your toolbar.
 
@@ -40,7 +43,7 @@ Right-click anywhere on a page, or right-click **any link** (for example on a se
 
 ### Option 3: keyboard shortcut
 Press **Alt + Shift + U** to copy the current page for the channel you used last.
-To change the shortcut, go to `chrome://extensions/shortcuts`.
+To change the shortcut, go to `chrome://extensions/shortcuts` (Brave: `brave://extensions/shortcuts`).
 
 ---
 
@@ -75,7 +78,7 @@ Click **Options** at the bottom of the popup:
 When there's a new version:
 1. Download the ZIP again from the GitHub page (steps 1 and 2 above).
 2. Replace the contents of your old folder with the new files.
-3. Go to `chrome://extensions` and click the circular **reload** arrow on the UTM Link Copier card.
+3. Go to your browser's extensions page (see step 4) and click the circular **reload** arrow on the UTM Link Copier card.
 
 You can check which version you have at the bottom-right of the popup.
 
@@ -83,7 +86,7 @@ You can check which version you have at the bottom-right of the popup.
 
 ## Troubleshooting
 
-- **"This page can't be tagged"**: the extension only works on normal web pages (addresses starting with `http` or `https`), not on Chrome's own pages.
+- **"This page can't be tagged"**: the extension only works on normal web pages (addresses starting with `http` or `https`), not on the browser's own pages (like the extensions page).
 - **The extension disappeared or shows an error**: the folder was probably moved or deleted. Put it back, or repeat the install steps.
 - **Nothing happens when I click a channel**: reload the page you're on and try again.
 
